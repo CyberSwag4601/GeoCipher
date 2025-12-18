@@ -215,7 +215,7 @@ elif page == "Logout":
     st.session_state["logged_in"] = False
     st.session_state["username"] = ""
     st.success("Logged out — you can close the tab or log in again.")
-    st.experimental_rerun()
+    st.rerun()
 
 # ----------------------- End of app -----------------------
 

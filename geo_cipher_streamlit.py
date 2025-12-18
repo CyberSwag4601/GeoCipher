@@ -109,7 +109,7 @@ if page == "Login":
             st.session_state["logged_in"] = True
             st.session_state["username"] = username.strip()
             st.success(f"Logged in as {st.session_state['username']}")
-            st.experimental_rerun()
+            st.rerun()
         else:
             st.error("Invalid credentials — try 'student' / 'password123' or 'demo' / 'demo'")
 

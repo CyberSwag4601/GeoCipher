@@ -20,7 +20,7 @@ Run locally:
 
 NOTES:
  - This is a demo for learning + class showcase of deploying Python web apps with Streamlit. For production, use proper user auth, secure key management, and non-deterministic salts.
- - The "location" is user-provided lat/lon. You can extend to capture browser geolocation via JS + streamlit.components if you want.
+ - The "location" is user-provided lat/lon. It can be extended to capture browser geolocation via JS + streamlit.components for further development of the demo.
 
 """
 
@@ -203,12 +203,7 @@ elif page == "About / Deployment Notes":
     st.write("1. Show the Login page and enter demo credentials.")
     st.write("2. Go to Encrypt, type a message and coordinates, encrypt and show the token + QR code.")
     st.write("3. Copy token and go to Decrypt; use same coordinates & passphrase to recover message.")
-    st.write("4. Explain how the key is derived and where you would improve security for production.")
-
-    st.markdown("---")
-    st.write("If you want, I can also:")
-    st.write("- Create a `requirements.txt` snippet you can add to your repo.")
-    st.write("- Convert this into a small Dockerfile for containerized deployment.")
+    st.write("4.Demonstrating key derivation and security improvements for production.")
 
 # ---------- PAGE: LOGOUT ----------
 elif page == "Logout":

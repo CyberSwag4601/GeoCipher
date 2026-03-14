@@ -97,7 +97,7 @@ else:
 # ---------- PAGE: LOGIN ----------
 if page == "Login":
     st.title("Login — Geo Cipher Demo")
-    st.write("Use demo credentials (shown below) to log in for the class demo.")
+    st.write("Use demo credentials (shown below) to log in for the demo.")
     col1, col2 = st.columns(2)
     with col1:
         username = st.text_input("Username")
@@ -184,7 +184,7 @@ elif page == "About / Deployment Notes":
     st.markdown(
         """
 - This demo shows a *location-based encryption* concept where the key is derived from latitude, longitude and an optional passphrase.
-- It's meant for classroom demonstration of building and deploying a Python web app (Streamlit) and showing secure symmetric encryption in practice.
+- It's meant for demonstration of building and deploying a Python web app (Streamlit) and showing secure symmetric encryption in practice.
 
 **Deployment (quick):**
 1. Ensure code dependencies are installed: `pip install streamlit cryptography qrcode pillow`.
@@ -199,7 +199,7 @@ elif page == "About / Deployment Notes":
     )
 
     st.markdown("---")
-    st.subheader("Class demo checklist")
+    st.subheader("Demo checklist")
     st.write("1. Show the Login page and enter demo credentials.")
     st.write("2. Go to Encrypt, type a message and coordinates, encrypt and show the token + QR code.")
     st.write("3. Copy token and go to Decrypt; use same coordinates & passphrase to recover message.")
@@ -216,4 +216,4 @@ elif page == "Logout":
 
 # Helpful: show footer note only when not in login
 if st.session_state.get("logged_in"):
-    st.caption("Geo Cipher demo — built with Streamlit. For class/demo use only.")
+    st.caption("Geo Cipher demo — built with Streamlit. For demo use only.")
